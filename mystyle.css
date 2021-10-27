@@ -1,32 +1,44 @@
 body {
   background-color: #C19EE0;
+  font-family: Montserrat, sans-serif;
+}
+.header img{
+  width: 70 px;
+  height: 80px;
+  float: left;
+  margin-left: 20px;
+
 }
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  margin-bottom: 20px;
   overflow: hidden;
   background-color: #C19EE0;
-  font-family: Montserrat, medium, sans-serif;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 500;
  
 }
 
 li {
   float: left;
-  border-left:1px solid black;
+  border-left:2px solid black;
 }
 
 li:last-child {
   border-left: none;
 }
 
+
 li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 50px;
   text-decoration: none;
+  
 }
 
 li a:hover:not(.active) {
@@ -35,4 +47,37 @@ li a:hover:not(.active) {
 .active {
   background-color: #d5b1f5;
 }
+hr.solid {
+  border-top: 20px solid white;
+}
+.welcome {
+  font-size: 64px;
+  line-height: 78px;
+  background-image: url("image/Welcome_Background.jpg");
+  background-size: 100% 100%;   
 
+}
+.welcome_box{
+  overflow: hidden; 
+  border-radius: 25px;
+  background-color: rgba(255,255,255,0.5);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 75px;
+  padding-left: 50px;
+  padding-right: 600px;
+  background-clip:content-box;
+  height: 50vw;
+}
+.welcome_box .welcome_text{
+  padding: 50px;
+  font-size: 4vw;
+  line-height: 80px;
+  font-weight: 500;
+}
+.welcome_box .welcome_text2{
+  font-size: 3vw;
+  line-height: 50px;
+  padding: 20px 50px;
+  font-weight: 400;
+}
