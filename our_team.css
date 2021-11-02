@@ -48,5 +48,5 @@ li a:hover:not(.active) {
 }
 
 hr.solid {
-    border-top: 20px solid white;
+  border: 10px solid white;
 }
