@@ -56,7 +56,7 @@ hr.solid {
   line-height: 78px;
   background-image: url("image/Welcome_Background.jpg");
   background-size: 100% 100%;   
-  height: 700px;
+  height: 45vw;
 
 }
 .welcome_box{
@@ -67,9 +67,9 @@ hr.solid {
   /* background-size: cover; */
   width: 50vw;
   background-clip:content-box;
-  height: 600px;
+  height: 37vw;
   left: 30px;
-  top: 30px;
+  top: 40px;
   /* padding-top: 55px; */
   
 }
@@ -100,13 +100,13 @@ hr.solid {
 .description{
   position: absolute;
   width: 700px;
-  height: 580px;
+  height: 40vw;
   left: 49px;
-  top: 943px;
+  top: 60vw;
   background-color: rgba(250,250,250,0.4);
   border-radius: 50px;
-  background-size: cover;
-  background-clip:content-box;
+  /* background-size: cover; */
+  /* background-clip:content-box; */
 }
 
 .description h1{
@@ -132,7 +132,7 @@ hr.solid {
   /* width: 30px; */
   /* height: 50px; */
   left: 819px;
-  top: 1023px;  
+  top: 65vw;  
 }
 .button {
   background-color: #C19EE0;
