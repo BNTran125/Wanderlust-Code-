@@ -163,6 +163,15 @@ hr.solid {
   position:absolute;
 }
 
+.planning h1 {
+  position:absolute;
+  font-family: Montserrat, sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  text-align: left;
+}
+
 .planning {
   position:absolute;
   font-weight: 600;
@@ -175,20 +184,18 @@ hr.solid {
 
 .map {
   position:absolute;
-  width: 375px;
-  height: 375px;
+  width: 175px;
+  height: 175px;
   left: 940px;
   top: 1000px;
 }
 
-
-
 .circle {
   position: center;
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
   font-size: 32px;
   text-align: center;
-  background-color: white;
+  background-color: #C19EE0;
 }
