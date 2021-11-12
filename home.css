@@ -147,4 +147,35 @@ hr.solid {
   cursor: pointer;
   border-radius: 40px;
   height: 75px;
+  transition-duration: 0.6s;
+}
+
+/* hr.whitebox {
+  border: 10px solid white;
+} */
+
+.steps {
+  position:absolute;
+}
+
+.planning {
+  position:absolute;
+  font-weight: 600;
+  font-size: 64px;
+}
+
+.map {
+  position:absolute;
+}
+
+
+
+.circle {
+  position: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 32px;
+  text-align: center;
+  background-color: white;
 }
