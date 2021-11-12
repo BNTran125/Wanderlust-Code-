@@ -164,12 +164,11 @@ hr.solid {
 }
 
 .planning h1 {
-  position:absolute;
-  font-family: Montserrat, sans-serif;;
-  font-style: normal;
+  top: 100px;
+  text-align: left;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 64px;
-  text-align: left;
 }
 
 .planning {
