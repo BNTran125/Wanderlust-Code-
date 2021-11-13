@@ -215,12 +215,11 @@ hr.solid {
 
 .locations {
   position:absolute;
+  text-align: center;
   font-family: Montserrat, sans-serif;
-  word-spacing: 250px;
-  font-size: 57px;
-  font-weight: 400;
-  left: 35px;
-  top: 2870px;
+  word-spacing: 140px;
+  left: 130px;
+  top: 2890px;
 }
 
 .destinations {
@@ -231,6 +230,10 @@ hr.solid {
 
 footer {
   position: absolute;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  font-size: 60px;
+  font-weight:600;
   width: 1404px;
   height: 400px;
   top: 3520px;
@@ -239,3 +242,16 @@ footer {
   font-family: Montserrat, sans-serif;
 }
 
+.pages a:active{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:600;
+  text-align: center;
+  top: 3720px;
+  color:black;
+  font-family: Montserrat, sans-serif;
+}
+
+.pages a:hover {
+  text-decoration: none;
+}
