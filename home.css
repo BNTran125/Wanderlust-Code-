@@ -48,7 +48,7 @@ li a:hover:not(.active) {
 }
 
 hr.solid {
-  border: 10px solid white;
+  border: 15px solid white;
 }
 
 .welcome {
@@ -155,7 +155,6 @@ hr.solid {
   position: absolute;
   width: 1404px;
   height: 1200px;
-  left: 0 px;
   top: 1500px;
   background-color: white;
 }
@@ -205,17 +204,28 @@ hr.solid {
   background-color: #C19EE0;
 }
 
-.options h1 {
-  top: 100px;
-  padding-bottom: 40px;
-  text-align: left;
+.title_location h1 {
+  position:absolute;
+  left: 35px;
+  top: 2740px;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 64px;
 }
 
+.locations {
+  position:absolute;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  word-spacing: 250px;
+  font-size: 57px;
+  font-weight: 400;
+  left: 35px;
+  top: 2870px;
+}
+
 .destinations {
   position:absolute;
-  left: 30px;
+  left: 35px;
   top: 3000px;
 }
