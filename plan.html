@@ -22,32 +22,182 @@
 
 
   <hr class="solid">
-  <h1>Answer our survey to receive suggestions for your trip!</h1>
   <div id="quiz-area">
+    <h1>Answer our survey to receive suggestions for your trip!</h1>  
     <section class="q-n-a">
       <h3 class="question">What country are you planning to travel to?</h3>
       <div class="answers">
         <div class="answer" data-value="Japan">Japan</div>
-        <div class="answer" data-value="Morroco">Morroco</div>
         <div class="answer" data-value="France">France</div>
         <div class="answer" data-value="Mexico">Mexico</div>
+        <div class="answer" data-value="Morocco">Morocco</div>
     </div>
     <div class="button-holder"></div>
     </section>
     <section class="q-n-a">
       <h3 class="question">How long are you planning to stay?</h3>
       <div class="answers">
-        <div class="answer" data-value="1">1 week</div>
-        <div class="answer" data-value="2">2-3 weeks</div>
-        <div class="answer" data-value="3">1 month</div>
+        <div class="answer2" data-value="5">1 week</div>
+        <div class="answer2" data-value="7">2-3 weeks</div>
+        <div class="answer2" data-value="9">1 month</div>
     </div>
+  </div>
     <div class="button-holder"></div>
     </section>
     <div class="button finish">Finish</div>
-
-  </div>
+    <div class="response" style="display: none;"><p></p>
+    </div>
+    <div class="Japan5" style="display: none;">
+      <ul>
+        <li>Visit the Shinjuku Gyoen National Garden</li>
+        <li>Go to a hot spring</li>
+        <li>Explore TeamLab Borderless Museum</li>
+        <li>Visit an aquarium</li>
+        <li>Head over to Japan's Universal Studios Theme Park</li>
+      </ul> </div>
+    <div class="Japan7" style="display: none;">
+      <ul>
+        <li>Ride on the bullet train</li>
+        <li>Walk around the city and enjoy some ramen</li>
+      </ul>
+   </div>
+   <div class="Japan9" style="display: none;">
+    <ul>
+      <li>Take a food tour</li>
+      <li>Visit Skytree</li>
+    </ul>
+   </div>
+   <div class="France5" style="display: none;">
+    <ul>
+      <li>Take a Seine River Cruise</li>
+      <li>Go to a hot spring</li>
+      <li>Watch the sunset at the Eiffel Tower</li>
+      <li>Shop at the Colorful Markets of Aix-en-Provence</li>
+      <li>Visit Musee de Louvre (Paris)</li>
+    </ul> </div>
+  <div class="France7" style="display: none;">
+    <ul>
+      <li>Go to Trocadero Gardens</li>
+      <li>Have fun at the Paris Disneyland Park</li>
+    </ul>
+ </div>
+ <div class="France9" style="display: none;">
+  <ul>
+    <li>Look at Oceanopolis' Aquarium</li>
+    <li>Rest in the park</li>
+  </ul>
+ </div>
+   <div class="Mexico5" style="display: none;">
+    <ul>
+      <li>Sample foods on a Food Tour</li>
+      <li>Bike around the city</li>
+      <li>Explore Chapultepec Castle</li>
+      <li>Go museum hopping around the city</li>
+      <li>Enjoy eating all the delicious foods</li>
+    </ul> </div>
+  <div class="Mexico7" style="display: none;">
+    <ul>
+      <li>Go to Parque Zoological de Centenario</li>
+      <li>Visit Xcaret Park</li>
+    </ul>
+ </div>
+ <div class="Mexico9" style="display: none;">
+  <ul>
+    <li>Head over to Six Flags Mexico</li>
+    <li>Visit the biggest indoor market: Mercado Libertad San Juan de Dios</li>
+  </ul>
+ </div>
+ <div class="Morocco5" style="display: none;">
+  <ul>
+    <li>Visit Jemaa el Fana Street Market</li>
+    <li>Take a look at Jardin Majorelle! An exotic garden</li>
+    <li>Go to Ouzoud Falls. Well known with monkeys</li>
+    <li>See the blue village of Chefchaouen</li>
+    <li>Enjoy the tastiest tagines and lambs at Al Mounia</li>
+  </ul> </div>
+<div class="Morocco7" style="display: none;">
+  <ul>
+    <li>Hike the Gorges of Dale</li>
+    <li>See the gorgeous Ouzoud Waterfall</li>
+  </ul>
+</div>
+<div class="Morocco9" style="display: none;">
+<ul>
+  <li>Visit Asilah</li>
+  <li>Enjoy some cusine food</li>
+</ul>
+</div>
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript">
+    var destination = "";
+    var week = 0;
+    var message ="";
+
+    $('.answer').on('click',function(){
+      if($(this).parent().find('.selected').length>0){
+        destination = "";
+        $(this).parent().find('.selected').removeClass('selected');
+      }
+
+      $(this).addClass('selected');
+      destination = $(this).data('value');
+    })
+
+    $('.answer2').on('click',function(){
+      if($(this).parent().find('.selected').length>0){
+        week = 0;
+        $(this).parent().find('.selected').removeClass('selected');
+      }
+      $(this).addClass('selected');
+      week = $(this).data('value');
+    })
+    $('.finish').on('click', function(){
+      if($('.selected').length ===2){
+        message = "Amazing! " + destination + " is a lovely place to visit. Here are some activities we recommend:";
+        $('#quiz-area, .finish').hide();
+        if(destination==="Japan"){
+          $('.Japan5').show();
+          if(week>=7){
+            $('.Japan7').show();
+          }
+          if(week===9){
+            $('.Japan9').show();
+          }
+        }
+        if(destination==="Mexico"){
+          $('.Mexico5').show();
+          if(week>=7){
+            $('.Mexico7').show();
+          }
+          if(week===9){
+            $('.Mexico9').show();
+          }
+        }
+        if(destination==="France"){
+          $('.France5').show();
+          if(week>=7){
+            $('.France7').show();
+          }
+          if(week===9){
+            $('.France9').show();
+          }
+        }
+        if(destination==="Morocco"){
+          $('.Morocco5').show();
+          if(week>=7){
+            $('.Morocco7').show();
+          }
+          if(week===9){
+            $('.Morocco9').show();
+          }
+        }
+      }
+      
+      
+      $('.response p').text(message);
+      $('.response').show();
+    })
   
   </script>
   </body>
