@@ -15,7 +15,7 @@ body {
   
 }
   
-ul {
+.header ul {
     list-style-type: none;
     margin: 0;
     margin-bottom: 20px;
@@ -27,17 +27,17 @@ ul {
     transition-duration: 0.6s;
 }
   
-li {
+.header li {
     float: left;
     border-left:2px solid black;
 }
   
-li:last-child {
+.header li:last-child {
     border-left: none;
 }
   
   
-li a {
+.header li a {
     display: block;
     color: black;
     text-align: center;
@@ -46,7 +46,7 @@ li a {
     
 }
   
-li a:hover:not(.active) {
+.header li a:hover:not(.active) {
     background-color: #d5b1f5;
     transition-duration: 0.6s;
 }
@@ -75,6 +75,26 @@ background-color:white;
     background-color:white;
 }
 
+.answer2{
+    background-color:#d5b1f5;
+    color:black;
+    border-radius: 20px;
+    padding: 20px;
+    text-align:center;
+    cursor: pointer;
+    margin: 10px auto 0;
+    width: 60%;
+    
+    }
+    
+.answer2:hover{
+    background-color:white;
+}
+    
+.answer2.selected{
+    background-color:white;
+    }
+
 .button{
     background-color:#d5b1f5;
     color:black;
@@ -88,6 +108,14 @@ background-color:white;
 }
 
 .button:hover{
-    background-color: aliceblue;
+    background-color: white;
 }
 
+.response{
+    color:black;
+    
+}
+
+ul{
+    margin:0;
+}
