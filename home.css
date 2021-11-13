@@ -216,7 +216,6 @@ hr.solid {
 .locations {
   position:absolute;
   font-family: Montserrat, sans-serif;
-  text-align: center;
   word-spacing: 250px;
   font-size: 57px;
   font-weight: 400;
@@ -229,3 +228,14 @@ hr.solid {
   left: 35px;
   top: 3000px;
 }
+
+footer {
+  position: absolute;
+  width: 1404px;
+  height: 400px;
+  top: 3520px;
+  background-color: white;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
